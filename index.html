@@ -1,0 +1,945 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+	<title>Abigail Cabadin Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+	<style>
+/* Default nav link — white text */
+#nav ul li a {
+	color: #ffffff !important;
+	background-color: transparent !important;
+	text-decoration: none;
+	padding: 0.5em 1em;
+	border-radius: 4px;
+	display: inline-block;
+	transition: background-color 0.3s ease, color 0.3s ease;
+	font-weight: normal !important;
+}
+
+/* Hover state — yellow background, black text */
+#nav ul li a:hover {
+	background-color: #f4b400 !important;
+	color: #000000 !important;
+	font-weight: normal !important;
+}
+
+/* Selected/active state — yellow background, bold black text */
+#nav ul li a.active {
+	background-color: #f4b400 !important;
+	color: #000000 !important;
+	font-weight: bold !important;
+}
+
+/* Force override of theme’s turquoise on selected link */
+#nav ul li a.active span,
+#nav ul li a.active:visited,
+#nav ul li a.active:focus,
+#nav ul li a.active:target {
+	color: #000000 !important;
+}
+		/* Base colors */
+		body {
+			background-color: #fdf6e3;
+			color: #2c2c2c;
+			font-family: 'Segoe UI', sans-serif;
+		}
+
+		/* Header */
+		#header {
+			background-color: #333333;
+			color: #fdf6e3;
+			padding: 2em;
+		}
+		.image.avatar img {
+			border: 3px solid #f4b400;
+			border-radius: 50%;
+		}
+
+		/* Navigation */
+		#nav ul li a {
+			color: #f4b400;
+			background-color: transparent;
+			text-decoration: none;
+			transition: background-color 0.3s ease, color 0.3s ease;
+			padding: 0.5em 1em;
+			border-radius: 4px;
+			display: inline-block;
+		}
+		#nav ul li a:hover,
+		#nav ul li a.active,
+		#nav ul li a:focus,
+		#nav ul li a:visited {
+			background-color: #f4b400;
+			color: #000000;
+		}
+
+		/* Section target styling */
+		section:target {
+			background-color: #fff8dc;
+			color: #2c2c2c;
+		}
+
+		/* Section text */
+		section h3,
+		section h4,
+		section p,
+		section li {
+			color: #2c2c2c;
+		}
+
+		/* Footer icons */
+		footer ul.icons a {
+			color: #f4b400;
+		}
+		footer ul.icons a:hover {
+			color: #ffcc00;
+		}
+
+		/* Skills icons */
+		.feature-icons li {
+			display: flex;
+			align-items: center;
+			margin-bottom: 1em;
+		}
+		.feature-icons li .fa {
+			background-color: #000;
+			color: #f4b400;
+			border-radius: 50%;
+			width: 2em;
+			height: 2em;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			margin-right: 0.75em;
+			font-size: 1em;
+		}
+
+		/* Project cards */
+		.features article {
+			border: 1px solid #f4b400;
+			border-radius: 8px;
+			padding: 1em;
+			margin-bottom: 2em;
+			background-color: #fff;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+		}
+		.features article img {
+			border-radius: 6px;
+			border: 2px solid #f4b400;
+			width: 100%;
+		}
+
+		/* Buttons */
+		.actions input.primary {
+			background-color: #f4b400;
+			border: none;
+			color: #fff;
+			cursor: pointer;
+		}
+		.actions input.primary:hover {
+			background-color: #ffcc00;
+		}
+		.actions input[type="reset"] {
+			background-color: #fff;
+			border: 1px solid #f4b400;
+			color: #2c2c2c;
+			cursor: pointer;
+		}
+		.actions input[type="reset"]:hover {
+			background-color: #fff8dc;
+		}
+		/* Remove any existing border and apply golden yellow divider */
+#nav ul li {
+	border-top: none !important;
+	border-bottom: 1px solid #f4b400 !important; /* golden yellow */
+}
+
+/* Optional: remove divider from last item */
+#nav ul li:last-child {
+	border-bottom: none !important;
+}
+.features h4 a {
+	color: #000000;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.features h4 a:hover {
+	color: #f4b400 !important; /* dark yellow override */
+}
+.bee-divider {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 2em 0;
+}
+
+.bee-divider::before,
+.bee-divider::after {
+	content: "";
+	flex: 1;
+	border-top: 2px dashed black;
+	margin: 0 1em;
+}
+
+.bee-icon {
+	font-size: 1.5em;
+}
+input[type="reset"] {
+	background-color: #f4b400 !important;
+	color: #ffffff !important;
+	border: none !important;
+	padding: 0.75em 1.5em !important;
+	border-radius: 6px !important;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	font-weight: bold;
+	font-size: 1em;
+	line-height: 1.5em;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+
+input[type="reset"]:hover {
+	background-color: #dca900 !important; /* darker yellow on hover */
+}
+.image.main {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.container header.major {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.container header.major + p {
+  margin-top: 0.5em !important;
+}
+article .inner p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+article .inner ul {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding-left: 1.2em;
+}
+
+article .inner li {
+  margin-bottom: 0.3em;
+}
+	</style>
+</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<section id="header">
+			<header>
+				<span class="image avatar"><img src="images/primary.PNG" alt="Abigail Cabadin" /></span>
+				<h1 id="logo"><a href="#">Abigail Cabadin Beavers</a></h1>
+				<p>Data Analyst turning raw data into actionable insights</p>
+			</header>
+			<nav id="nav">
+				<ul>
+					<li><a href="#one" class="active">About</a></li>
+					<li><a href="#two">Skills</a></li>
+					<li><a href="#three">Featured Projects</a></li>
+					<li><a href="#four">Contact</a></li>
+				</ul>
+			</nav>
+			<footer>
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/abigailcabadin" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/abigailcabadin" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="https://public.tableau.com/app/profile/abigail.cabadin/vizzes" class="icon solid fa-table"><span class="label">Tableau</span></a></li>
+				</ul>
+			</footer>
+		</section>
+	</body>
+</html>
+
+	<!-- Wrapper -->
+<div id="wrapper" style="background-color: #fdf6e3; color: #2c2c2c; font-family: 'Segoe UI', sans-serif;">
+
+	<!-- Main -->
+	<div id="main">
+
+		<!-- One -->
+<section id="one" style="padding: 1.5em 2em 1em 2em;">
+  <div class="image main" data-position="center" style="text-align: center; margin-bottom: 0;">
+    <img src="images/profilebanner1.png" alt="Abigail Cabadin Beavers Banner"
+         style="max-width: 100%; height: auto; border-radius: 8px; border: 2px solid #f4b400; margin-bottom: 0;" />
+  </div>
+
+  <div class="container">
+    <header class="major" style="margin-top: 0;">
+      <h2 style="color: #333333;">Hi!</h2>
+      <p style="color: #f4b400;">
+        I am Abigail Cabadin Beavers,<br />
+        a data analyst.
+      </p>
+    </header>
+
+    <p>
+  Hi! I’m Abigail Cabadin Beavers — a data analyst whose journey started long before I earned my first analytics certificate.
+</p>
+
+<p>
+  While studying for my Master of Science degree, I took a bioinformatics course that opened the door to R and SQL. Analyzing massive scientific datasets sparked my fascination with data — how it behaves, how it reveals patterns, and how it can drive meaningful decisions.
+</p>
+
+<p>
+  My nine years as a teacher shaped the other half of my approach: the ability to simplify complexity. Breaking down scientific concepts for students taught me how to communicate clearly, structure information logically, and make data understandable for any audience.
+</p>
+
+<p>
+  Today, I bring both worlds together. I build dashboards, validate data, design models, and create reporting solutions using SQL, Power BI, Tableau, R, and Excel. My goal is always the same: make data accurate, accessible, and actionable.
+</p>
+
+  </div>
+</section>
+<!-- Two -->
+<section id="two" style="padding: 2em;">
+	<div class="container">
+		<div class="bee-divider">
+	<span class="bee-icon">🐝</span>
+</div>
+		<h3 style="color: #333333;">Skills</h3>
+		<p>My skills include SQL, Python, R, Excel, Tableau, and Power BI for extracting, analyzing, and visualizing data to deliver actionable insights.</p>
+
+		<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2em;">
+			<div style="display: flex; align-items: center;">
+				<span style="background-color: #f4b400; color: #000000; border: 2px solid #000000; border-radius: 50%; width: 2.5em; height: 2.5em; display: inline-flex; align-items: center; justify-content: center; margin-right: 1em;">
+					<i class="fas fa-database"></i>
+				</span>
+				SQL: Proficient in writing complex queries, data manipulation, and database management.
+			</div>
+			<div style="display: flex; align-items: center;">
+				<span style="background-color: #f4b400; color: #000000; border: 2px solid #000000; border-radius: 50%; width: 2.5em; height: 2.5em; display: inline-flex; align-items: center; justify-content: center; margin-right: 1em;">
+					<i class="fas fa-code"></i>
+				</span>
+				Python: Experienced in data analysis, visualization, and automation.
+			</div>
+			<div style="display: flex; align-items: center;">
+				<span style="background-color: #f4b400; color: #000000; border: 2px solid #000000; border-radius: 50%; width: 2.5em; height: 2.5em; display: inline-flex; align-items: center; justify-content: center; margin-right: 1em;">
+					<i class="fas fa-chart-bar"></i>
+				</span>
+				R: Skilled in statistical analysis and data visualization.
+			</div>
+			<div style="display: flex; align-items: center;">
+				<span style="background-color: #f4b400; color: #000000; border: 2px solid #000000; border-radius: 50%; width: 2.5em; height: 2.5em; display: inline-flex; align-items: center; justify-content: center; margin-right: 1em;">
+					<i class="fas fa-file-excel"></i>
+				</span>
+				Excel: Advanced skills in data manipulation, pivot tables, and complex formulas.
+			</div>
+			<div style="display: flex; align-items: center;">
+				<span style="background-color: #f4b400; color: #000000; border: 2px solid #000000; border-radius: 50%; width: 2.5em; height: 2.5em; display: inline-flex; align-items: center; justify-content: center; margin-right: 1em;">
+					<i class="fas fa-table"></i>
+				</span>
+				Tableau: Proficient in creating interactive dashboards and data visualizations.
+			</div>
+			<div style="display: flex; align-items: center;">
+				<span style="background-color: #f4b400; color: #000000; border: 2px solid #000000; border-radius: 50%; width: 2.5em; height: 2.5em; display: inline-flex; align-items: center; justify-content: center; margin-right: 1em;">
+					<i class="fas fa-chart-pie"></i>
+				</span>
+				Power BI: Experienced in building reports and visualizations for data insights.
+			</div>
+			<div style="display: flex; align-items: center;">
+				<span style="background-color: #f4b400; color: #000000; border: 2px solid #000000; border-radius: 50%; width: 2.5em; height: 2.5em; display: inline-flex; align-items: center; justify-content: center; margin-right: 1em;">
+					<i class="fas fa-code-branch"></i>
+				</span>
+				Git: Knowledgeable in version control and collaboration.
+			</div>
+		</div>
+
+		<h4 style="color: #333333; margin-top: 2em;">Soft Skills</h4>
+		<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2em;">
+			<div style="display: flex; align-items: center;">
+				<span style="background-color: #f4b400; color: #000000; border: 2px solid #000000; border-radius: 50%; width: 2.5em; height: 2.5em; display: inline-flex; align-items: center; justify-content: center; margin-right: 1em;">
+					<i class="fas fa-comments"></i>
+				</span>
+				Effective Communication: Ability to explain complex concepts in an understandable way.
+			</div>
+			<div style="display: flex; align-items: center;">
+				<span style="background-color: #f4b400; color: #000000; border: 2px solid #000000; border-radius: 50%; width: 2.5em; height: 2.5em; display: inline-flex; align-items: center; justify-content: center; margin-right: 1em;">
+					<i class="fas fa-lightbulb"></i>
+				</span>
+				Problem-Solving: Strong analytical skills to identify and solve data-related issues.
+			</div>
+			<div style="display: flex; align-items: center;">
+				<span style="background-color: #f4b400; color: #000000; border: 2px solid #000000; border-radius: 50%; width: 2.5em; height: 2.5em; display: inline-flex; align-items: center; justify-content: center; margin-right: 1em;">
+					<i class="fas fa-users"></i>
+				</span>
+				Collaboration: Experience working with teams to achieve common goals.
+			</div>
+			<div style="display: flex; align-items: center;">
+				<span style="background-color: #f4b400; color: #000000; border: 2px solid #000000; border-radius: 50%; width: 2.5em; height: 2.5em; display: inline-flex; align-items: center; justify-content: center; margin-right: 1em;">
+					<i class="fas fa-sync"></i>
+				</span>
+				Adaptability: Quick to learn new tools and technologies.
+			</div>
+			<div style="display: flex; align-items: center;">
+				<span style="background-color: #f4b400; color: #000000; border: 2px solid #000000; border-radius: 50%; width: 2.5em; height: 2.5em; display: inline-flex; align-items: center; justify-content: center; margin-right: 1em;">
+					<i class="fas fa-eye"></i>
+				</span>
+				Attention to Detail: Meticulous in ensuring data accuracy and consistency.
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Featured Projects -->
+<section id="three">
+						<div class="container">
+							<div class="bee-divider">
+	<span class="bee-icon">🐝</span>
+</div>
+							<h3>Featured Projects</h3>
+							<p>Welcome to my portfolio projects page! Here, you'll find a collection of my work as a data analyst, showcasing my skills in data extraction, analysis, and visualization. Each project highlights my ability to turn raw data into actionable insights, demonstrating my proficiency in SQL, Python, R, Excel, Tableau, and Power BI.</p>
+							<div class="features">
+								<article>
+									<a href="https://abigailcabadin.github.io/clinical-trial-simulation-part2/" class="image" target="_blank">
+										<img src="images/clinical.jpg" alt="Clinical Trial Simulation Project" />
+									</a>
+									<div class="inner">
+										<h4>
+										<a href="https://abigailcabadin.github.io/clinical-trial-simulation-part2/" target="_blank">Clinical Trial Simulation Project</a>
+										</h4>
+										<p>This two-part project simulates a full clinical trial workflow — from synthetic data generation to SQL analysis and interactive Power BI dashboards. Part 1 focuses on building a relational database and validating trial logic. Part 2 brings the data to life with dashboards that visualize patient demographics, safety outcomes, and efficacy signals for Drug A.</p>
+										
+										<p><strong>Explore the full project:</strong></p>
+										<ul>
+										<li><strong>Part 1:</strong> <a href="https://abigailcabadin.github.io/clinical-trial-simulation-part1/" target="_blank">Clinical Trial Simulation – SQL & Data Modeling</a></li>
+										<li><strong>Part 2:</strong> <a href="https://abigailcabadin.github.io/clinical-trial-simulation-part2/" target="_blank">Clinical Trial Simulation – Power BI Dashboards</a></li>
+										</ul>
+
+										<p><strong>SKILLS:</strong> R Programming, SQL (MySQL), Data Validation, Power BI, Clinical Trial Modeling, Interactive Dashboards, Data Storytelling</p>
+
+										<p>Check out my LinkedIn posts for more details:</p>
+										<ul>
+										<li><a href="https://www.linkedin.com/posts/abigailcbeavers_clinicaltrials-datascience-sql-activity-7384322463066869760-0ZTJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD4YwHIBydKc9gEAS1EFakybPaxiD_tXmsw" target="_blank">Part 1 LinkedIn Post</a></li>
+										<li><a href="https://www.linkedin.com/posts/abigailcbeavers_letsconnect-clinicaltrialsimulation-dataanalytics-activity-7386518323045347328-7MOi?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD4YwHIBydKc9gEAS1EFakybPaxiD_tXmsw" target="_blank">Part 2 LinkedIn Post</a></li>
+										</ul>
+									</div>
+									</article>
+								<article>
+									<a href="https://abigailcabadin.github.io/Tailwind-Traders-PowerBI-project/" class="image" target="_blank">
+										<img src="images/tailwind traders logo.jpg" alt="Tailwind Traders Power BI Project" />
+									</a>
+									<div class="inner">
+										<h4>
+											<a href="https://abigailcabadin.github.io/Tailwind-Traders-PowerBI-project/" target="_blank">Tailwind Traders Power BI Project</a>
+										</h4>
+										<p>This capstone project for the Microsoft Power BI Professional Certificate demonstrates skills in data preparation, modeling, analysis, and visualization for a fictional retail company, Tailwind Traders. The project delivers actionable insights based on sales transactions, customer loyalty, product categories, and more using Power BI.</p>
+										<p><strong>SKILLS:</strong> Power Query, Dimensional Modeling (Star Schema), DAX Functions, Time Intelligence, Interactive Dashboards, Usability, and Data Storytelling</p>
+										<p>Check out my <a href="https://www.linkedin.com/posts/abigailcabadin_i-am-excited-to-share-my-recent-power-bi-activity-7316524550647676928-tn8n?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD4YwHIBydKc9gEAS1EFakybPaxiD_tXmsw" target="_blank">LinkedIn post</a> about the project for more details.</p>
+									</div>
+								</article>
+								<article>
+									<a href="hhttps://abigailcabadin.github.io/furniture-analytics-project/" class="image" target="_blank">
+										<img src="images/furniture.jpg" alt="Furniture Analytics Project" />
+									</a>
+									<div class="inner">
+										<h4>
+										<a href="https://abigailcabadin.github.io/furniture-analytics-project/" target="_blank">
+											Furniture Analytics Project
+										</a>
+										</h4>
+										<p>
+										A full-stack data analytics project for a fictional online furniture retailer exploring delivery performance, customer satisfaction, and profitability. Using R and R Markdown for data cleaning, exploration, and predictive modeling—then bringing insights to life in a multi-page Power BI dashboard—this project delivers actionable recommendations for operational efficiency and strategic growth.
+										</p>
+										<p>
+										<strong>SKILLS:</strong> R &amp; R Markdown, Data Cleaning &amp; Validation, Exploratory Analysis, Logistic &amp; Linear Regression, Decision Tree &amp; Random Forest Modeling, Power BI Dashboard Design, Data Visualization &amp; Storytelling
+										</p>
+										<p>
+										Check out my 
+										<a href="https://www.linkedin.com/posts/abigailcabadin_just-wrapped-up-a-capstone-project-that-simulates-activity-7370898195402498049-ODC4?utm_source=share&utm_medium=member_desktop&amp;rcm=ACoAAD4YwHIBydKc9gEAS1EFakybPaxiD_tXmsw" 
+											target="_blank">
+											LinkedIn post
+										</a> 
+										for more details.
+										</p>
+									</div>
+									</article>
+								<article>
+									<a href="https://abigailcabadin.github.io/Wine_Analysis_Project/" class="image" target="_blank"><img src="images/wine.jpg" alt="Wine Quality Analysis" /></a>
+									<div class="inner">
+										<h4><a href="https://abigailcabadin.github.io/Wine_Analysis_Project/" target="_blank">Red Wine Quality Analysis</a></h4>
+										<p>This project involves analyzing a dataset of red wine quality. The primary objectives are to clean the data for accuracy and consistency, perform exploratory data analysis (EDA) to uncover insights, conduct a linear regression model and correlation analysis, and build predictive models to determine wine quality.</p>
+										<p><strong>SKILLS:</strong> R, Linear Regression, Correlation Analysis, Predictive Modeling, Data Analysis</p>
+										<p>Check out my <a href="https://www.linkedin.com/posts/abigailcabadin_wine-quality-analysis-activity-7270935232780914688-BQBT?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn post</a> about the project for more details.</p>
+									</div>
+								</article>
+								<article>
+									<a href="https://abigailcabadin.github.io/Black_Friday_Sales_Project/" class="image" target="_blank"><img src="images/blackfriday.png" alt="Black Friday Sales Analysis" /></a>
+									<div class="inner">
+									  <h4><a href="https://abigailcabadin.github.io/Black_Friday_Sales_Project/" target="_blank">Black Friday Sales Analysis</a></h4>
+									  <p>This project aims to analyze Black Friday sales data to uncover valuable insights into customer purchasing behavior. The analysis includes data cleaning and exploratory data analysis (EDA), leading to a thorough understanding of sales patterns. I used tableau for creating visualizations and dashboard.</p>
+									  <p><strong>SKILLS:</strong> SQL, Tableau</p>
+									  <p>Check out my <a href="https://www.linkedin.com/posts/abigailcabadin_datascience-blackfriday-salesanalysis-activity-7267368039812157440-Tv_1?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn post</a> about the project for more details.</p>
+									</div>
+								  </article>
+																
+							</div>
+							<p><a href="#more-projects" onclick="showMoreProjects()"><strong>More Projects &rarr;</strong></a></p>
+						</div>
+					</section>
+
+					<!-- More Projects Section -->
+					<section id="more-projects" style="display: none;">
+						<div class="container">
+							<div class="bee-divider">
+	<span class="bee-icon">🐝</span>
+</div>
+							<h3>Projects and Coursework Showcase</h3>
+							<p>Welcome to the Projects and Coursework Showcase! This section highlights a collection of my projects and coursework exercises from various learning experiences. Each project demonstrates my ability to apply theoretical knowledge to practical scenarios, showcasing my skills in data analysis, visualization, and problem-solving. Explore the projects to see how I turn raw data into actionable insights and continuously expand my expertise in the field of data analytics.</p>
+							<div class="features">
+								<article>
+									<a href="https://abigailcabadin.github.io/Google-Data-Analytics-Capstone/" class="image" target="_blank"><img src="images/cyclistic.png" alt="Google Analytics Capstone Project" /></a>
+									<div class="inner">
+										<h4><a href="https://abigailcabadin.github.io/Google-Data-Analytics-Capstone/" target="_blank">Google Analytics Capstone Project</a></h4>
+										<p>This project is part of the Google Data Analytics Professional Certificate. The goal of this capstone project is to analyze bike-share usage patterns and develop user conversion strategies. I explained the background of the project, the full process of cleaning, analyzing, and visualizing the data, along with my final recommendations and the summary of data. I used R for analysis and also R and Tableau for creating visualizations and dashboard.</p>
+										<p><strong>SKILLS:</strong> R, Tableau</p>
+										<p>Check out my <a href="https://www.linkedin.com/posts/abigailcabadin_dataanalytics-googledataanalytics-r-activity-7259653809583407104-cenP?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn post</a> about the project for more details.</p>
+									</div>
+								</article>
+									<article>
+									<a href="https://abigailcabadin.github.io/MySQL-project-world-layoffs/" class="image" target="_blank"><img src="images/layoffs.jpg" alt="World Layoffs Project" /></a>
+									<div class="inner">
+										<h4><a href="https://abigailcabadin.github.io/MySQL-project-world-layoffs/" target="_blank">World Layoffs Project</a></h4>
+										<p>This project involves cleaning and analyzing a dataset of global layoffs. The primary objectives are to clean the data for accuracy and consistency, and to perform exploratory data analysis (EDA) to uncover insights and trends.</p>
+										<p><strong>SKILL:</strong> SQL</p>
+									</div>
+								</article>
+								<article>
+									<a href="https://public.tableau.com/app/profile/abigail.cabadin/viz/AirBnBFullProject_17195164791820/Dashboard1" class="image" target="_blank"><img src="images/seattle.jpg" alt="Airbnb Tableau Project" /></a>
+									<div class="inner">
+										<h4><a href="https://public.tableau.com/app/profile/abigail.cabadin/viz/AirBnBFullProject_17195164791820/Dashboard1" target="_blank">Airbnb Tableau Project</a></h4>
+										<p>This dashboard provides a detailed analysis of Airbnb listings, focusing on pricing, availability, and location trends. It includes interactive maps, bar charts, and line graphs to visualize data, helping users understand market dynamics and make informed decisions. The data for this project was sourced from Kaggle.</p>
+										<p><strong>SKILLS:</strong> Tableau</p>
+									</div>
+								</article>
+								<article>
+									<a href="https://abigailcabadin.github.io/SQL---Khan-Academy-Challenges-and-Projects/" class="image" target="_blank"><img src="images/khan.jpg" alt="SQL Khan Academy Challenges and Projects Repository" /></a>
+									<div class="inner">
+										<h4><a href="https://abigailcabadin.github.io/SQL---Khan-Academy-Challenges-and-Projects/" target="_blank">SQL Khan Academy Challenges and Projects Repository</a></h4>
+										<p>This repository showcases the schemas, solutions, and questions to challenges and projects found in the SQL course offered by Khan Academy. The coursework includes:</p>
+										<ul>
+											<li>SQL Basics: Creating tables and selecting data.</li>
+											<li>Advanced SQL Queries: Using AND/OR, IN, LIKE, HAVING, and more.</li>
+											<li>Relational Queries in SQL: Storing related data in multiple tables and using joins to bring them together (inner joins, outer joins, and self joins).</li>
+											<li>Modifying Databases with SQL: Updating and deleting data, and changing table schemas with SQL commands UPDATE, DELETE, ALTER, and DROP.</li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="https://github.com/abigailcabadin/R-BASICS-PH125.1X-COURSE" class="image" target="_blank"><img src="images/R.jpg" alt="R-BASICS-PH125" /></a>
+									<div class="inner">
+										<h4><a href="https://github.com/abigailcabadin/R-BASICS-PH125.1X-COURSE" target="_blank">R-Basics-PH125</a></h4>
+										<p>This repository showcases my solutions and reports for the R basic course exercises completed through HarvardX. It is designed to help me master the fundamentals of R programming. Each file contains detailed instructions and R scripts used to solve the exercises, along with documentation of my approach.</p>
+										<p><strong>SKILL:</strong> R</p>
+									</div>
+								</article>
+								<!-- Add more projects as needed -->
+							</div>
+							<p><a href="javascript:history.back()"><strong>&larr; Back</strong></a></p>
+						</div>
+					</section>
+
+						<!-- Four -->
+						<section id="four">
+							<div class="container">
+								<div class="bee-divider">
+	<span class="bee-icon">🐝</span>
+</div>
+								<h3>Contact Me</h3>
+								<p>I'd love to hear from you! Whether you have a question about my projects, want to discuss data analytics, or just want to say hello, feel free to reach out. Fill out the form below, and I'll get back to you as soon as possible.</p>
+								<form method="post" action="https://formspree.io/f/xzzbvgvp">
+									<div class="row gtr-uniform">
+										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+										<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
+										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" class="primary" value="Send Message" /></li>
+												<li><input type="reset" value="Reset Form" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</div>
+						</section>
+
+
+						<!-- Five -->
+						<!--
+							<section id="five">
+								<div class="container">
+									<h3>Elements</h3>
+
+									<section>
+										<h4>Text</h4>
+										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+										<hr />
+										<header>
+											<h4>Heading with a Subtitle</h4>
+											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+										</header>
+										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+										<header>
+											<h5>Heading with a Subtitle</h5>
+											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+										</header>
+										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+										<hr />
+										<h2>Heading Level 2</h2>
+										<h3>Heading Level 3</h3>
+										<h4>Heading Level 4</h4>
+										<h5>Heading Level 5</h5>
+										<h6>Heading Level 6</h6>
+										<hr />
+										<h5>Blockquote</h5>
+										<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+										<h5>Preformatted</h5>
+										<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+									</section>
+
+									<section>
+										<h4>Lists</h4>
+										<div class="row">
+											<div class="col-6 col-12-xsmall">
+												<h5>Unordered</h5>
+												<ul>
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Sagittis adipiscing lorem eleifend.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+												</ul>
+												<h5>Alternate</h5>
+												<ul class="alt">
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Sagittis adipiscing lorem eleifend.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+												</ul>
+											</div>
+											<div class="col-6 col-12-xsmall">
+												<h5>Ordered</h5>
+												<ol>
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Etiam vel felis at lorem sed viverra.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Etiam vel felis at lorem sed viverra.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+												</ol>
+												<h5>Icons</h5>
+												<ul class="icons">
+													<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+													<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+													<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+													<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+													<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+													<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
+												</ul>
+											</div>
+										</div>
+										<h5>Actions</h5>
+										<ul class="actions">
+											<li><a href="#" class="button primary">Default</a></li>
+											<li><a href="#" class="button">Default</a></li>
+											<li><a href="#" class="button alt">Default</a></li>
+										</ul>
+										<ul class="actions small">
+											<li><a href="#" class="button primary small">Small</a></li>
+											<li><a href="#" class="button small">Small</a></li>
+											<li><a href="#" class="button alt small">Small</a></li>
+										</ul>
+										<div class="row">
+											<div class="col-3 col-6-medium col-12-xsmall">
+												<ul class="actions stacked">
+													<li><a href="#" class="button primary">Default</a></li>
+													<li><a href="#" class="button">Default</a></li>
+													<li><a href="#" class="button alt">Default</a></li>
+												</ul>
+											</div>
+											<div class="col-3 col-6 col-12-xsmall">
+												<ul class="actions stacked">
+													<li><a href="#" class="button primary small">Small</a></li>
+													<li><a href="#" class="button small">Small</a></li>
+													<li><a href="#" class="button alt small">Small</a></li>
+												</ul>
+											</div>
+											<div class="col-3 col-6-medium col-12-xsmall">
+												<ul class="actions stacked">
+													<li><a href="#" class="button primary fit">Default</a></li>
+													<li><a href="#" class="button fit">Default</a></li>
+													<li><a href="#" class="button alt fit">Default</a></li>
+												</ul>
+											</div>
+											<div class="col-3 col-6-medium col-12-xsmall">
+												<ul class="actions stacked">
+													<li><a href="#" class="button primary small fit">Small</a></li>
+													<li><a href="#" class="button small fit">Small</a></li>
+													<li><a href="#" class="button alt small fit">Small</a></li>
+												</ul>
+											</div>
+										</div>
+									</section>
+
+									<section>
+										<h4>Table</h4>
+										<h5>Default</h5>
+										<div class="table-wrapper">
+											<table>
+												<thead>
+													<tr>
+														<th>Name</th>
+														<th>Description</th>
+														<th>Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Item One</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Two</td>
+														<td>Vis ac commodo adipiscing arcu aliquet.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Three</td>
+														<td> Morbi faucibus arcu accumsan lorem.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Four</td>
+														<td>Vitae integer tempus condimentum.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Five</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+												</tbody>
+												<tfoot>
+													<tr>
+														<td colspan="2"></td>
+														<td>100.00</td>
+													</tr>
+												</tfoot>
+											</table>
+										</div>
+
+										<h5>Alternate</h5>
+										<div class="table-wrapper">
+											<table class="alt">
+												<thead>
+													<tr>
+														<th>Name</th>
+														<th>Description</th>
+														<th>Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Item One</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Two</td>
+														<td>Vis ac commodo adipiscing arcu aliquet.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Three</td>
+														<td> Morbi faucibus arcu accumsan lorem.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Four</td>
+														<td>Vitae integer tempus condimentum.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Five</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+												</tbody>
+												<tfoot>
+													<tr>
+														<td colspan="2"></td>
+														<td>100.00</td>
+													</tr>
+												</tfoot>
+											</table>
+										</div>
+									</section>
+
+									<section>
+										<h4>Buttons</h4>
+										<ul class="actions">
+											<li><a href="#" class="button primary">Primary</a></li>
+											<li><a href="#" class="button">Default</a></li>
+											<li><a href="#" class="button alt">Alternate</a></li>
+										</ul>
+										<ul class="actions">
+											<li><a href="#" class="button primary large">Large</a></li>
+											<li><a href="#" class="button">Default</a></li>
+											<li><a href="#" class="button alt small">Small</a></li>
+										</ul>
+										<ul class="actions fit">
+											<li><a href="#" class="button primary fit">Fit</a></li>
+											<li><a href="#" class="button fit">Fit</a></li>
+											<li><a href="#" class="button alt fit">Fit</a></li>
+										</ul>
+										<ul class="actions fit small">
+											<li><a href="#" class="button primary fit small">Fit + Small</a></li>
+											<li><a href="#" class="button fit small">Fit + Small</a></li>
+											<li><a href="#" class="button alt fit small">Fit + Small</a></li>
+										</ul>
+										<ul class="actions">
+											<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+											<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+											<li><a href="#" class="button alt icon solid fa-check">Icon</a></li>
+										</ul>
+										<ul class="actions">
+											<li><span class="button primary disabled">Primary</span></li>
+											<li><span class="button disabled">Default</span></li>
+											<li><span class="button alt disabled">Alternate</span></li>
+										</ul>
+									</section>
+
+									<section>
+										<h4>Form</h4>
+										<form method="post" action="#">
+											<div class="row gtr-uniform">
+												<div class="col-6 col-12-xsmall">
+													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+												</div>
+												<div class="col-6 col-12-xsmall">
+													<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+												</div>
+												<div class="col-12">
+													<select name="demo-category" id="demo-category">
+														<option value="">- Category -</option>
+														<option value="1">Manufacturing</option>
+														<option value="1">Shipping</option>
+														<option value="1">Administration</option>
+														<option value="1">Human Resources</option>
+													</select>
+												</div>
+												<div class="col-4 col-12-medium">
+													<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+													<label for="demo-priority-low">Low Priority</label>
+												</div>
+												<div class="col-4 col-12-medium">
+													<input type="radio" id="demo-priority-normal" name="demo-priority">
+													<label for="demo-priority-normal">Normal Priority</label>
+												</div>
+												<div class="col-4 col-12-medium">
+													<input type="radio" id="demo-priority-high" name="demo-priority">
+													<label for="demo-priority-high">High Priority</label>
+												</div>
+												<div class="col-6 col-12-medium">
+													<input type="checkbox" id="demo-copy" name="demo-copy">
+													<label for="demo-copy">Email me a copy of this message</label>
+												</div>
+												<div class="col-6 col-12-medium">
+													<input type="checkbox" id="demo-human" name="demo-human" checked>
+													<label for="demo-human">I am a human and not a robot</label>
+												</div>
+												<div class="col-12">
+													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+												</div>
+												<div class="col-12">
+													<ul class="actions">
+														<li><input type="submit" value="Send Message" /></li>
+														<li><input type="reset" value="Reset" class="alt" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</section>
+
+									<section>
+										<h4>Image</h4>
+										<h5>Fit</h5>
+										<span class="image fit"><img src="images/banner.jpg" alt="" /></span>
+										<div class="box alt">
+											<div class="row gtr-50 gtr-uniform">
+												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+											</div>
+										</div>
+										<h5>Left &amp; Right</h5>
+										<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+										<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+									</section>
+
+								</div>
+							</section>
+						-->
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Abigail Cabadin. All rights reserved 2024.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				function showMoreProjects() {
+					document.getElementById('more-projects').style.display = 'block';
+				}
+				</script>
+
+	</body>
+</html>
